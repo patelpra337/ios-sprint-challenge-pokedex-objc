@@ -13,6 +13,7 @@
 		ABFFEEF724E842BA0032C444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEEF624E842BA0032C444 /* Assets.xcassets */; };
 		ABFFEEFA24E842BA0032C444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEEF824E842BA0032C444 /* LaunchScreen.storyboard */; };
 		ABFFEEFD24E842BA0032C444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEFC24E842BA0032C444 /* main.m */; };
+		ABFFEF0B24E845C20032C444 /* CRUPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF0A24E845C20032C444 /* CRUPokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		ABFFEEF924E842BA0032C444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFFEEFB24E842BA0032C444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABFFEEFC24E842BA0032C444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABFFEF0924E845C20032C444 /* CRUPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokemon.h; sourceTree = "<group>"; };
+		ABFFEF0A24E845C20032C444 /* CRUPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		ABFFEF0824E844740032C444 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ABFFEF0924E845C20032C444 /* CRUPokemon.h */,
+				ABFFEF0A24E845C20032C444 /* CRUPokemon.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			files = (
 				ABFFEEEC24E842B90032C444 /* AppDelegate.m in Sources */,
 				ABFFEEFD24E842BA0032C444 /* main.m in Sources */,
+				ABFFEF0B24E845C20032C444 /* CRUPokemon.m in Sources */,
 				ABFFEEEF24E842B90032C444 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
