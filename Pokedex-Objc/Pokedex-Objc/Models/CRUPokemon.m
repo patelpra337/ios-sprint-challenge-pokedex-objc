@@ -7,6 +7,8 @@
 //
 
 #import "CRUPokemon.h"
+#import "CRUPokemonDetail.h"
+#import "NSURL+Secure.h"
 
 @implementation CRUPokemon
 
@@ -19,7 +21,7 @@
     return self;
 }
 
-- (nullable instancetype)iniitWithDictionary:(NSDictionary *)dictionary
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     NSString *name = [[dictionary objectForKey:@"name"] capitalizedString];
     if (![name isKindOfClass:[NSString class]]) return nil;
@@ -27,7 +29,9 @@
     NSString *URLString = [dictionary objectForKey:@"url"];
     if (![URLString isKindOfClass:[NSString class]]) return nil;
     
-    return self;
+    NSURL *URL = [NSURL URLWithString:URLString].URLUsingHTTPS;
+    
+    return [self initWithName:name URL:URL];
     
 }
 

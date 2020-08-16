@@ -22,7 +22,7 @@ NS_SWIFT_NAME(Pokemon)
 - (nonnull instancetype)initWithName:(nonnull NSString *)name
                                  URL:(nullable NSURL *)detailsURL;
 
-- (nullable instancetype)iniitWithDictionary:(nonnull NSDictionary *)dictionary;
+- (nullable instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary;
 
 @end
 

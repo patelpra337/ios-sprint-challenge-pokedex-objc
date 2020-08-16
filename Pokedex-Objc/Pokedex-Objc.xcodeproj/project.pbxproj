@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABC64A5F24E9BDF200BBC1C1 /* PokemonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF1A24E981D60032C444 /* PokemonAPI.swift */; };
 		ABFFEEEC24E842B90032C444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEEB24E842B90032C444 /* AppDelegate.m */; };
 		ABFFEEEF24E842B90032C444 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEEE24E842B90032C444 /* SceneDelegate.m */; };
 		ABFFEEF524E842B90032C444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEEF324E842B90032C444 /* Main.storyboard */; };
@@ -14,7 +15,7 @@
 		ABFFEEFA24E842BA0032C444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEEF824E842BA0032C444 /* LaunchScreen.storyboard */; };
 		ABFFEEFD24E842BA0032C444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEFC24E842BA0032C444 /* main.m */; };
 		ABFFEF0B24E845C20032C444 /* CRUPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF0A24E845C20032C444 /* CRUPokemon.m */; };
-		ABFFEF1224E858D00032C444 /* CRUPokeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF1124E858D00032C444 /* CRUPokeDetails.m */; };
+		ABFFEF1224E858D00032C444 /* CRUPokemonDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF1124E858D00032C444 /* CRUPokemonDetail.m */; };
 		ABFFEF1524E861B40032C444 /* NSURL+Secure.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF1424E861B40032C444 /* NSURL+Secure.m */; };
 		ABFFEF1724E863BF0032C444 /* Manual-Reference-Counting.md in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEF1624E863BF0032C444 /* Manual-Reference-Counting.md */; };
 /* End PBXBuildFile section */
@@ -32,11 +33,13 @@
 		ABFFEEFC24E842BA0032C444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABFFEF0924E845C20032C444 /* CRUPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokemon.h; sourceTree = "<group>"; };
 		ABFFEF0A24E845C20032C444 /* CRUPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokemon.m; sourceTree = "<group>"; };
-		ABFFEF1024E858D00032C444 /* CRUPokeDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokeDetails.h; sourceTree = "<group>"; };
-		ABFFEF1124E858D00032C444 /* CRUPokeDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokeDetails.m; sourceTree = "<group>"; };
+		ABFFEF1024E858D00032C444 /* CRUPokemonDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokemonDetail.h; sourceTree = "<group>"; };
+		ABFFEF1124E858D00032C444 /* CRUPokemonDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokemonDetail.m; sourceTree = "<group>"; };
 		ABFFEF1324E861B40032C444 /* NSURL+Secure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Secure.h"; sourceTree = "<group>"; };
 		ABFFEF1424E861B40032C444 /* NSURL+Secure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Secure.m"; sourceTree = "<group>"; };
 		ABFFEF1624E863BF0032C444 /* Manual-Reference-Counting.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Manual-Reference-Counting.md"; path = "../Manual-Reference-Counting.md"; sourceTree = "<group>"; };
+		ABFFEF1924E981D60032C444 /* Pokedex-Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pokedex-Objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABFFEF1A24E981D60032C444 /* PokemonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		ABFFEF0624E844590032C444 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				ABFFEF1A24E981D60032C444 /* PokemonAPI.swift */,
+				ABFFEF1924E981D60032C444 /* Pokedex-Objc-Bridging-Header.h */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -131,8 +136,8 @@
 			children = (
 				ABFFEF0924E845C20032C444 /* CRUPokemon.h */,
 				ABFFEF0A24E845C20032C444 /* CRUPokemon.m */,
-				ABFFEF1024E858D00032C444 /* CRUPokeDetails.h */,
-				ABFFEF1124E858D00032C444 /* CRUPokeDetails.m */,
+				ABFFEF1024E858D00032C444 /* CRUPokemonDetail.h */,
+				ABFFEF1124E858D00032C444 /* CRUPokemonDetail.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				TargetAttributes = {
 					ABFFEEE624E842B90032C444 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -209,9 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFFEF1224E858D00032C444 /* CRUPokeDetails.m in Sources */,
+				ABFFEF1224E858D00032C444 /* CRUPokemonDetail.m in Sources */,
 				ABFFEF1524E861B40032C444 /* NSURL+Secure.m in Sources */,
 				ABFFEEEC24E842B90032C444 /* AppDelegate.m in Sources */,
+				ABC64A5F24E9BDF200BBC1C1 /* PokemonAPI.swift in Sources */,
 				ABFFEEFD24E842BA0032C444 /* main.m in Sources */,
 				ABFFEF0B24E845C20032C444 /* CRUPokemon.m in Sources */,
 				ABFFEEEF24E842B90032C444 /* SceneDelegate.m in Sources */,
@@ -295,6 +302,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -346,6 +354,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -354,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				INFOPLIST_FILE = "Pokedex-Objc/Info.plist";
@@ -363,6 +373,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.Pokedex-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pokedex-Objc/Networking/Pokedex-Objc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				INFOPLIST_FILE = "Pokedex-Objc/Info.plist";
@@ -380,6 +394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pravinpatel.Pokedex-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pokedex-Objc/Networking/Pokedex-Objc-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

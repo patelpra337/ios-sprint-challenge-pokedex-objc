@@ -1,5 +1,5 @@
 //
-//  CRUPokeDetails.h
+//  CRUPokemonDetail.h
 //  Pokedex-Objc
 //
 //  Created by patelpra on 8/15/20.
@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-NS_SWIFT_NAME(PokeDetails)
-@interface CRUPokeDetails : NSObject
+NS_SWIFT_NAME(PokemonDetail)
+@interface CRUPokemonDetail : NSObject
 
 @property (nonatomic, copy, readonly, nonnull) NSString *name;
 @property (nonatomic, readonly, nonnull) NSNumber *identifier;
@@ -19,7 +19,7 @@ NS_SWIFT_NAME(PokeDetails)
 
 - (nonnull instancetype)initWithName:(nonnull NSString *)name
                           identifier:(nonnull NSNumber *)identifier
-                           spriteURL:(nonnull NSURL *)spriteURL
+                           spriteURL:(nullable NSURL *)spriteURL
                            abilities:(nonnull NSString *)abilities;
 
 - (nullable instancetype)initWithDictionary:(nonnull NSDictionary *)dictionary;

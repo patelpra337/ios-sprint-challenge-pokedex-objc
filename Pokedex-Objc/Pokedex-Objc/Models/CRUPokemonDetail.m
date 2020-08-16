@@ -6,14 +6,14 @@
 //  Copyright © 2020 Crus Technologies. All rights reserved.
 //
 
-#import "CRUPokeDetails.h"
+#import "CRUPokemonDetail.h"
 #import "NSURL+Secure.h"
 
-@implementation CRUPokeDetails
+@implementation CRUPokemonDetail
 
 - (nonnull instancetype)initWithName:(nonnull NSString *)name
                           identifier:(nonnull NSNumber *)identifier
-                           spriteURL:(nonnull NSURL *)spriteURL
+                           spriteURL:(nullable NSURL *)spriteURL
                            abilities:(nonnull NSString *)abilities
 {
     if (self = [super init]) {
@@ -73,6 +73,5 @@
                     spriteURL:spriteURL
                     abilities:abilities];
 }
-
 
 @end
