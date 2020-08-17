@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ABC64A5F24E9BDF200BBC1C1 /* PokemonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEF1A24E981D60032C444 /* PokemonAPI.swift */; };
 		ABC64A6224EB215900BBC1C1 /* CRUPokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC64A6124EB215900BBC1C1 /* CRUPokemonTableViewController.m */; };
+		ABC64A6524EB25F500BBC1C1 /* CRUPokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC64A6424EB25F500BBC1C1 /* CRUPokemonDetailViewController.m */; };
 		ABFFEEEC24E842B90032C444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEEB24E842B90032C444 /* AppDelegate.m */; };
 		ABFFEEEF24E842B90032C444 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEEEE24E842B90032C444 /* SceneDelegate.m */; };
 		ABFFEEF524E842B90032C444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFFEEF324E842B90032C444 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		ABC64A6024EB215900BBC1C1 /* CRUPokemonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokemonTableViewController.h; sourceTree = "<group>"; };
 		ABC64A6124EB215900BBC1C1 /* CRUPokemonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokemonTableViewController.m; sourceTree = "<group>"; };
+		ABC64A6324EB25F500BBC1C1 /* CRUPokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUPokemonDetailViewController.h; sourceTree = "<group>"; };
+		ABC64A6424EB25F500BBC1C1 /* CRUPokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUPokemonDetailViewController.m; sourceTree = "<group>"; };
 		ABFFEEE724E842B90032C444 /* Pokedex-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokedex-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFFEEEA24E842B90032C444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABFFEEEB24E842B90032C444 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 			children = (
 				ABC64A6024EB215900BBC1C1 /* CRUPokemonTableViewController.h */,
 				ABC64A6124EB215900BBC1C1 /* CRUPokemonTableViewController.m */,
+				ABC64A6324EB25F500BBC1C1 /* CRUPokemonDetailViewController.h */,
+				ABC64A6424EB25F500BBC1C1 /* CRUPokemonDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				ABC64A5F24E9BDF200BBC1C1 /* PokemonAPI.swift in Sources */,
 				ABC64A6224EB215900BBC1C1 /* CRUPokemonTableViewController.m in Sources */,
 				ABFFEEFD24E842BA0032C444 /* main.m in Sources */,
+				ABC64A6524EB25F500BBC1C1 /* CRUPokemonDetailViewController.m in Sources */,
 				ABFFEF0B24E845C20032C444 /* CRUPokemon.m in Sources */,
 				ABFFEEEF24E842B90032C444 /* SceneDelegate.m in Sources */,
 			);
