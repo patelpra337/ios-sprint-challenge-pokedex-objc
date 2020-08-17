@@ -12,13 +12,22 @@
 
 @interface CRUPokemonDetailViewController ()
 
+@property (nonatomic) IBOutlet UIImageView *pokemonImageView;
+@property (nonatomic) IBOutlet UILabel *nameLabel;
+@property (nonatomic) IBOutlet UILabel *idLabel;
+@property (nonatomic) IBOutlet UILabel *abilitiesLabel;
+
+
 @end
 
 @implementation CRUPokemonDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
+
+
 
 @end
