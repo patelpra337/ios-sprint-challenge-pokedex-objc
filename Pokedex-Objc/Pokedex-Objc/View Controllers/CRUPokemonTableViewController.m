@@ -7,6 +7,7 @@
 //
 
 #import "CRUPokemonTableViewController.h"
+#import "CRUPokemonDetailViewController.h"
 #import "CRUPokemon.h"
 #import "Pokedex_Objc-Swift.h"
 
@@ -69,8 +70,17 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    if ([[segue identifier] isEqualToString:@"ShowPokemonDetailSegue"]) {
+        CRUPokemonDetailViewController *pokemonDetailVC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        CRUPokemon *pokemon = [self.pokemon objectAtIndex:indexPath.row];
+        
+        pokemonDetailVC.pokemon = pokemon;
+        pokemonDetailVC.name = pokemon.name;
+        pokemonDetailVC.detailsURL = pokemon.detailsURL;
+        
+        [CRUPokemonAPI.sharedController fillInDetailsForPokemon:pokemon];
+    }
 }
-
 
 @end

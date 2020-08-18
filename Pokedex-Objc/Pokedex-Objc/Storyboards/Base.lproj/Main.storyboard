@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bZd-ug-haU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bZd-ug-haU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--Pokedex-->
         <scene sceneID="EHc-Ha-aVN">
             <objects>
-                <tableViewController id="eF8-ba-PeH" customClass="DTWPokemonTableViewController" sceneMemberID="viewController">
+                <tableViewController id="eF8-ba-PeH" customClass="CRUPokemonTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s0W-nX-Ung">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
         <!--Pokemon Detail View Controller-->
         <scene sceneID="hwO-uP-oHR">
             <objects>
-                <viewController id="yiu-Ns-K7d" customClass="DTWPokemonDetailViewController" sceneMemberID="viewController">
+                <viewController id="yiu-Ns-K7d" customClass="CRUPokemonDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wmi-HS-BxV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,10 +132,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="7iQ-YD-a4F"/>
                     <connections>
-                        <outlet property="abilitiesLabel" destination="lpK-bK-RZm" id="kMo-T7-vLE"/>
-                        <outlet property="idLabel" destination="Blg-Q2-PHm" id="Z5X-1U-u7A"/>
-                        <outlet property="nameLabel" destination="Z74-WI-BfT" id="5q6-uz-lP3"/>
-                        <outlet property="pokemonImageView" destination="Y49-qG-v0w" id="KkO-Wp-hyQ"/>
+                        <outlet property="abilitiesLabel" destination="lpK-bK-RZm" id="u2o-hV-caF"/>
+                        <outlet property="idLabel" destination="Blg-Q2-PHm" id="jMe-qI-K8O"/>
+                        <outlet property="nameLabel" destination="Z74-WI-BfT" id="8fV-bd-rlI"/>
+                        <outlet property="pokemonImageView" destination="Y49-qG-v0w" id="qVK-4y-iNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id1-Mx-EcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
