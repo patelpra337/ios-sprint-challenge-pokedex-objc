@@ -27,6 +27,27 @@ Answer the following questions inline with this document.
 	```
 
 	2. Rewrite the code so that it does not leak any memory with ARC disabled
+    
+    ```
+    NSCharacterSet *punctuationSet = [NSCharacterSet punctuationCharacterSet];
+
+    NSString *cleanQuote = [[quote componentsSeparatedByCharactersInSet:punctuationSet] componentsJoinedByString:@""];
+    NSArray *words = [[cleanQuote lowercaseString] componentsSeparatedByString:@" "];
+
+    NSMutableDictionary<NSString *, NSNumber *> *wordFrequency = [[NSMutableDictionary alloc] init];
+
+    for (NSString *word in words) {
+        NSNumber *count = wordFrequency[word];
+        if (count) {
+            wordFrequency[word] = [NSNumber numberWithInteger:count.integerValue + 1];
+        } else {
+            wordFrequency[word] = [[[NSNumber alloc] initWithInteger:1] autorelease];
+        }
+    }
+
+    printf("Word frequency: %s", wordFrequency.description.UTF8String);
+    [wordFrequency release];
+    ```
 
 2. Which of these objects is autoreleased?  Why?
 
